@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.artwork {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.artwork:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.artwork:hover img {
+    transform: scale(1.05);
+}
+.artwork-details {
+    margin-top: 10px;
+    text-align: center;
+}
+.artwork-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.artwork-artist {
+    color: #666;
+    font-size: 16px;
+}
+.artwork-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6347;
+}
+.back-button {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+.back-button a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.back-button a:hover {
+    color: #ff6347;
+}

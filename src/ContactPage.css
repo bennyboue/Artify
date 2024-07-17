@@ -1,0 +1,132 @@
+/* ContactPage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header {
+    background: linear-gradient(90deg, #333, #555);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 120px 20px 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff6347;
+    text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #ff6347;
+}
+.contact-form button {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.contact-form button:hover {
+    background-color: #e5533d;
+    transform: translateY(-3px);
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tooltip {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.back-to-top:hover + .tooltip {
+    opacity: 1;
+}
